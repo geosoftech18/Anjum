@@ -1,0 +1,34 @@
+{
+    "PhotoGalleryData":{
+        "tag":"Memorable moments",
+        "title":"Our team, our journey ",
+        "logoWithLinks":[
+            {
+                "logo":"instagram",
+                "link":""
+            },
+            {
+                "logo":"facebook",
+                "link":""
+            },
+            {
+                "logo":"twitter",
+                "link":""
+            }
+        ],
+        "photos":[
+            {
+                "imageUrl":"/hero.jpg"
+            },
+            {
+                "imageUrl":"/hero.jpg"
+            },
+            {
+                "imageUrl":"/hero.jpg"
+            },
+            {
+                "imageUrl":"/hero.jpg"
+            }
+        ]
+    }
+}

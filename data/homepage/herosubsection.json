@@ -1,0 +1,43 @@
+{
+    "HeroSubsectionData": {
+        "tag": "Our Journey",
+        "title": "Innovation & Ayurveda at core",
+        "subtitle": "Blending ancient wisdom with modern solutions & delivering high-quality products for enhanced holistic well-being.",
+        "rightPoints": [
+            {
+                "point": "100% botanical extracts"
+            },
+            {
+                "point": "In-house manufacturing unit"
+            },
+            {
+                "point": "10+ quality checks conducted"
+            },
+            {
+                "point": "Competitive market price"
+            }
+        ],
+        "image": {
+            "logoPath": "path/to/logo.png",
+            "title": "Ayurvedic practices, ethics at core",
+            "subtitle": "Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum."
+        },
+        "bottomPoints": {
+            "tag": "Our achievements so far",
+            "points": [
+                {
+                    "number": "300+",
+                    "text": " Botanical Extracts"
+                },
+                {
+                    "number": "200+",
+                    "text": "Formulations"
+                },
+                {
+                    "number": "500k+",
+                    "text": "Happy Customers"
+                }
+            ]
+        }
+    }
+}

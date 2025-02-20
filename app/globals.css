@@ -2,20 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.headingfontclass {
+  @apply text-[64px] leading-[73.59px] tracking-normal font-[400] font-[Tinos];
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.subheadingfontclass {
+  @apply text-[20px] leading-[24.38px] tracking-normal font-normal;
+  font-family: 'Montserrat', sans-serif; /* Ensure Montserrat is imported */
 }

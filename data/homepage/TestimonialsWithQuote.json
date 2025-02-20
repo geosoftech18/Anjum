@@ -1,0 +1,26 @@
+{
+    "TestimonialsWithQuoteData": {
+      "tag": "Customer Reviews",
+      "title": "What Our Customers Say",
+      "items": [
+        {
+          "imageUrl": "",
+          "name": "Alice Johnson",
+          "text": "This product has exceeded my expectations! The quality is top-notch, and the customer service was excellent."
+        },
+        {
+          "imageUrl": "",
+          "name": "Michael Smith",
+          "text": "Absolutely love this! The experience was smooth, and I would highly recommend it to anyone."
+        },
+        {
+          "imageUrl": "",
+          "name": "Emily Carter",
+          "text": "A game-changer for me. I've tried many alternatives, but this one stands out with its efficiency and design."
+        }
+      ],
+      "quote": "Our customers' satisfaction is our greatest reward. Their words inspire us to keep innovating and improving.",
+      "button": "Read More Testimonials"
+    }
+  }
+  

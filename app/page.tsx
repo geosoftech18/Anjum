@@ -1,101 +1,109 @@
-import Image from "next/image";
+import HeroSubsection from "@/components/HeroSubsection";
+import { Button } from "@/components/ui/button";
+import { ChevronRight } from "lucide-react";
+import Link from "next/link";
+
+import HeroSubsectionJSON from "@/data/homepage/herosubsection.json";
+import CardsWithQuote from "@/components/CardsWithQuote";
+
+import CardsWithQuoteJSON from "@/data/homepage/CardsWithQuote.json";
+import QuoteCTA from "@/components/QuoteCTA";
+import TopicWithPhotoandQuestion from "@/components/TopicWithPhotoandQuestion";
+import CarousalComponent from "@/components/CarousalComponent";
+
+import OpenRightCarousalComponent from "@/components/OpenRightCarousalComponent";
+import OpenRightCarousalComponentJSON from "@/data/homepage/OpenRightCarousalComponent.json";
+
+import AboutUs from "@/components/aboutUs";
+
+import TestimonialsWithQuote from "@/components/testimonialsWithQuote";
+import TestimonialsWithQuoteJSON from "@/data/homepage/TestimonialsWithQuote.json";
+
+import FAQs from "@/components/FAQs";
+import FAQsJSON from "@/data/homepage/FAQs.json";
+
+import PhotoGallery from "@/components/photoGallery";
+import PhotoGalleryJSON from "@/data/homepage/PhotoGallery.json";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const HeroSubsectionData = HeroSubsectionJSON.HeroSubsectionData;
+  const CardsWithQuoteData = CardsWithQuoteJSON.CardsWithQuoteData;
+  const OpenRightCarousalComponentData =
+    OpenRightCarousalComponentJSON.OpenRightCarousalComponentData;
+  const TestimonialsWithQuoteData =
+    TestimonialsWithQuoteJSON.TestimonialsWithQuoteData;
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  const FAQsData = FAQsJSON.FAQsData;
+
+  const PhotoGalleryData = PhotoGalleryJSON.PhotoGalleryData;
+
+  return (
+    <>
+      {/* absolute  */}
+      <div className="top-10 ">
+        <div className="bg-[url('/hero.jpg')] bg-cover bg-center h-[90vh]  px-10">
+          <div className=" flex items-start justify-center flex-col h-full w-2/4 gap-10 ">
+            <div className="text-5xl headingfontclass  text-white">
+              Sourcing Premium Botanical Extracts, for over 25 Years
+            </div>
+            <div className="subheadingfontclass  text-white">
+              Blending ancient wisdom with modern solutions & delivering
+              high-quality products for enhanced well-being. Explore our 300
+              unique herbal extracts and formulations.
+            </div>
+            <div className=" flex items-center justify-center gap-10">
+              <Button className="bg-white text-black rounded-xl" size={"lg"}>
+                Explore Extracts
+              </Button>
+              <Button
+                className="bg-transparent border border-white rounded-xl"
+                size={"lg"}
+              >
+                Request a quote
+              </Button>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <div className="bg-headingOlive flex items-center justify-around border border-b-8 border-buttonbgbrown">
+          <div className="p-5 text-white">
+            <div className="text-xl font-semibold">We are Certified!</div>
+            <div className="flex items-center justify-center gap-5">
+              Understand value of each certification{" "}
+              <Link className="underline underline-offset-2 flex items-center justify-center" href={"/"}>
+                <div>Know More</div>
+                <ChevronRight className="h-5 w-5" />
+              </Link>
+            </div>
+          </div>
+          <div>1</div>
+          <div>1</div>
+          <div>1</div>
+          <div>1</div>
+        </div>
+      </div>
+      <div className="h-20"></div>
+      <HeroSubsection HeroSubsectionData={HeroSubsectionData} />
+      <div className="h-20"></div>
+      <CardsWithQuote CardsWithQuoteData={CardsWithQuoteData} />
+      <div className="h-20"></div>
+      <QuoteCTA />
+      <div className="h-20"></div>
+      <TopicWithPhotoandQuestion />
+      <div className="h-20"></div>
+      <CarousalComponent />
+      <div className="h-20"></div>
+      <OpenRightCarousalComponent
+        OpenRightCarousalComponentData={OpenRightCarousalComponentData}
+      />
+      <div className="h-20"></div>
+      <AboutUs />
+      <div className="h-20"></div>
+      <TestimonialsWithQuote
+        TestimonialsWithQuoteData={TestimonialsWithQuoteData}
+      />
+      <FAQs FAQsData={FAQsData} />
+
+      <PhotoGallery PhotoGalleryData={PhotoGalleryData} />
+    </>
   );
 }
