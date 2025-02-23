@@ -1,13 +1,48 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-.headingfontclass {
-  @apply text-[64px] leading-[73.59px] tracking-normal font-[400] font-[Tinos];
-}
+@theme {
+  --font-heading: Tinos, serif;
+  --font-body: Montserrat, sans-serif;
 
+  /* Primary Colors */
+  --color-primary-50: hsl(20.9 74.2% 93.9%);
+  --color-primary-100: hsl(20.9 74.2% 87.8%);
+  --color-primary-200: hsl(20 75% 74.9%);
+  --color-primary-300: hsl(19.9 75.5% 63.1%);
+  --color-primary-400: hsl(20.1 75.2% 51%);
+  --color-primary-500: hsl(20.4 75.4% 38.2%);
+  --color-primary-600: hsl(20 75.9% 31%);
+  --color-primary-700: hsl(20.2 76.1% 22.9%);
+  --color-primary-800: hsl(20.7 76.3% 14.9%);
+  --color-primary-900: hsl(19.4 75.6% 8%);
+  --color-primary-950: hsl(20 71.4% 4.1%);
 
-.subheadingfontclass {
-  @apply text-[20px] leading-[24.38px] tracking-normal font-normal;
-  font-family: 'Montserrat', sans-serif; /* Ensure Montserrat is imported */
+  /* Secondary Colors */
+  --color-secondary-50: hsl(60 56.1% 92%);
+  --color-secondary-100: hsl(60 55.6% 84.1%);
+  --color-secondary-200: hsl(60 55.8% 68%);
+  --color-secondary-300: hsl(60 55.6% 53.1%);
+  --color-secondary-400: hsl(60 55.6% 37.1%);
+  --color-secondary-500: hsl(60 55.6% 21.2%);
+  --color-secondary-600: hsl(60 55.8% 16.9%);
+  --color-secondary-700: hsl(60 55.2% 13.1%);
+  --color-secondary-800: hsl(60 56.1% 8%);
+  --color-secondary-900: hsl(60 52.4% 4.1%);
+  --color-secondary-950: hsl(60 60% 2%);
+
+  /* Background Colors */
+  --color-background-50: hsl(36 100% 99%);
+  --color-background-100: hsl(40 100% 97.1%);
+  --color-background-200: hsl(39.2 100% 94.9%);
+  --color-background-300: hsl(39.5 100% 92%);
+  --color-background-400: hsl(38.8 100% 90%);
+  --color-background-500: hsl(38.5 100% 86.9%);
+  --color-background-600: hsl(38.8 100% 70%);
+  --color-background-700: hsl(38.9 100% 52%);
+  --color-background-800: hsl(38.9 100% 35.1%);
+  --color-background-900: hsl(38.6 100% 17.1%);
+  --color-background-950: hsl(39.1 100% 9%);
+
+  /* Radius */
+  --radius-4xl: 2rem;
 }

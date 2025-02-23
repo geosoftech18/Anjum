@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import Navbar from "@/components/navbar_footer/navbar";
+import type { Metadata } from 'next';
+import { heading, body } from '@/lib/font';
+import './globals.css';
 
 export const metadata: Metadata = {
-  title: "Anjum",
+  title: 'Anjum',
+  description: 'Anjum',
 };
 
 export default function RootLayout({
@@ -13,8 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <Navbar />
+      <body
+        className={`${heading.variable} ${body.variable} antialiased font-body`}
+      >
         {children}
       </body>
     </html>
