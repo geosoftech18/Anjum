@@ -105,9 +105,9 @@ export default function HomePage() {
 
       <TopicWithPhotoandQuestion />
       <CarousalWithHeadings />
-      <OpenRightCarousalComponent
+      {/* <OpenRightCarousalComponent
         OpenRightCarousalComponentData={OpenRightCarousalComponentData}
-      />
+      /> */}
       {/* Add other homepage content here */}
 
       {/* about us */}
