@@ -5,7 +5,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Heading } from '../ui/heading';
 import { Text } from '../ui/text';
-import { Button } from '../ui/button';
 
 export const PurityGuaranteed = () => {
   return (

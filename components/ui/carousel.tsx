@@ -3,9 +3,9 @@
 
 import React, { useState, useCallback } from 'react';
 import { motion, AnimatePresence, PanInfo } from 'framer-motion';
-import { Button } from './button';
+// import { Button } from './button';
 import FlowerIcon from '@/assets/flower';
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
+// import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 
 export interface CarouselSlide {
   id: string;
