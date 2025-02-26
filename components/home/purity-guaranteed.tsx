@@ -45,9 +45,9 @@ export const PurityGuaranteed = () => {
             </Text>
 
             <Link href="/shop" className="no-underline">
-              <Button className="!px-3 !py-1 !bg-primary-400">
+              <button className="!px-3 !py-1 bg-primary-400 rounded-xl text-white font-body font-medium text-lg">
                 Explore shop
-              </Button>
+              </button>
             </Link>
           </div>
 

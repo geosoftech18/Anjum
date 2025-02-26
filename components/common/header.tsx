@@ -61,7 +61,7 @@ const Header = () => {
 
             <TextLink
               href="/contact-us"
-              className="text-secondary-600 dark:text-secondary-600"
+              className="!text-secondary-600 dark:!text-secondary-600"
             >
               Contact us
             </TextLink>

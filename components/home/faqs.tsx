@@ -20,12 +20,12 @@ const FAQs: React.FC<FAQsInterface> = ({ FAQsData }) => {
     <section className="w-full bg-background-200">
       <div className="flex flex-col items-center justify-center container mx-auto p-20 px-40 gap-14">
         <div className="flex flex-col items-center justify-center gap-4">
-          <Text className="text-secondary-500 dark:!text-secondary-500">
+          <Text className="!text-secondary-500 dark:!text-secondary-500">
             {FAQsData.tag}
           </Text>
           <Heading
             level={2}
-            className="text-secondary-500 dark:!text-secondary-500 sm:!text-4xl"
+            className="!text-secondary-500 dark:!text-secondary-500 sm:!text-4xl"
           >
             {FAQsData.title}
           </Heading>

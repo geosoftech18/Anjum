@@ -19,7 +19,7 @@ interface StatProps {
 const Stat = ({ number, label, sublabel }: StatProps) => (
   <div className="flex items-center gap-5">
     <div className="flex items-baseline gap-2">
-      <Heading className="text-4xl !text-secondary-300 dark:!text-secondary-300 md:text-5xl xl:text-6xl">
+      <Heading className="text-4xl !text-secondary-400 dark:!text-secondary-400 md:text-5xl xl:text-6xl">
         {number}
       </Heading>
     </div>
@@ -64,7 +64,7 @@ export const Journey = ({ className = '' }: JourneyProps) => {
             />
 
             {/* Overlay Card */}
-            <div className="absolute bottom-8 right-8 max-w-[280px] rounded-lg bg-white p-6 shadow-lg">
+            <div className="absolute bottom-[20%] right-0 max-w-[280px] rounded-l-lg bg-white p-6 shadow-lg">
               <div className="mb-2 flex justify-center">
                 <Image
                   src="/brand-assets/leaf-icon.svg"

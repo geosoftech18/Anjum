@@ -106,7 +106,7 @@ export const Carousel = ({
     >
       {/* Navigation Buttons - Positioned on sides */}
       <div className="pointer-events-none absolute inset-x-4 top-1/2 z-30 flex -translate-y-1/2 items-center justify-between">
-        <Button
+        {/* <Button
           onClick={() => paginate(-1)}
           className="pointer-events-auto !rounded-full after:!rounded-full dark:after:!rounded-full !bg-white/20 p-2 hover:!bg-white/30 dark:bg-white/20 dark:hover:!bg-white/30 max-sm:hidden"
           aria-label="Previous slide"
@@ -119,7 +119,7 @@ export const Carousel = ({
           aria-label="Next slide"
         >
           <ChevronRightIcon className="h-6 w-6 text-white" />
-        </Button>
+        </Button> */}
       </div>
 
       {/* Slides Container */}

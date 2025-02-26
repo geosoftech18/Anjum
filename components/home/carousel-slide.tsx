@@ -37,10 +37,10 @@ export const CarouselSlide = ({
       <div className="relative z-20 mx-auto h-full max-w-7xl px-4 sm:px-16">
         <div className="flex h-full items-center">
           <div className="max-w-3xl">
-            <Heading className="text-4xl font-bold text-white selection:bg-white/30 selection:text-white md:text-5xl lg:text-6xl">
+            <Heading className="text-4xl font-bold text-white dark:!text-white md:text-5xl lg:text-6xl">
               {title}
             </Heading>
-            <Text className="mt-4 text-xl text-white selection:bg-white/30 selection:text-white dark:text-white">
+            <Text className="mt-4 text-xl text-white dark:!text-white">
               {description}
             </Text>
             {ctaButtons && (
@@ -49,7 +49,7 @@ export const CarouselSlide = ({
                   <Button
                     href={ctaButtons.primary.href}
                     color="white"
-                    className="relative text-white hover:scale-105 active:scale-95"
+                    className="relative text-secondary-500 dark:!text-secondary-500 hover:scale-105 active:scale-95"
                   >
                     {ctaButtons.primary.label}
                   </Button>
@@ -58,7 +58,7 @@ export const CarouselSlide = ({
                   <Button
                     href={ctaButtons.secondary.href}
                     outline
-                    className="relative border-white text-white hover:scale-105 hover:bg-white/10 active:scale-95"
+                    className="relative !border-white dark:!border-white !text-white dark:!text-white hover:scale-105 hover:bg-white/10 active:scale-95"
                   >
                     {ctaButtons.secondary.label}
                   </Button>

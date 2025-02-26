@@ -51,9 +51,9 @@ export const CTA = ({ className = '' }: CTAProps) => {
               </Heading>
 
               <Link href="/contact" className="no-underline">
-                <Button className="bg-secondary-100 dark:bg-secondary-300 hover:bg-secondary-200 dark:hover:bg-secondary-200 text-secondary-800 dark:text-secondary-100 font-medium !px-3 !py-1 rounded-full border-0 text-base">
+                <button className="!px-3 !py-1 bg-secondary-400 rounded-xl text-white font-body font-medium text-lg">
                   Contact us
-                </Button>
+                </button>
               </Link>
             </div>
           </div>
