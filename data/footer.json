@@ -1,0 +1,43 @@
+{
+    "footerData": {
+        "contact": {
+            "address": {
+                "number": "MMF5+WF7, Village – Facher,",
+                "tehsil": " Tehsil - Nimbahera,",
+                "state": "Rajasthan",
+                "pin": "312620"
+            },
+            "phone": "+91-9483249234",
+            "email": "info@anjumextraction.com"
+        },
+        "certifications": [
+            "/brand-assets/iso-certificate.png",
+            "/brand-assets/gmp-certificate.png",
+            "/brand-assets/haccp-certificate.png",
+            "/brand-assets/fssai-certificate.png"
+        ],
+        "company": [
+            "About us",
+            "Mission Roshani",
+            "Blogs",
+            "Careers",
+            "Contact us"
+        ],
+        "store": [
+            "Dry Extracts",
+            "Formulations",
+            "Extracts",
+            "Profile",
+            "Cart"
+        ],
+        "availableOn": {
+            "label": "Available on",
+            "items": [
+                "/brand-assets/flipkart.png",
+                "/brand-assets/flipkart.png",
+                "/brand-assets/flipkart.png",
+                "/brand-assets/flipkart.png"
+            ]
+        }
+    }
+}

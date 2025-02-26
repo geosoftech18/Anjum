@@ -10,6 +10,18 @@ import { CTA } from '@/components/home/cta';
 import { Logo } from '@/components/home/logo-carousel';
 import { MostSellingProducts } from '@/components/home/most-selling-products';
 import { ProductJourney, PurityGuaranteed } from '@/components/home';
+import AboutUs from '@/components/home/about-us';
+import TestimonialsWithQuote from '@/components/home/testimonials-with-quote';
+import FAQs from '@/components/home/faqs';
+import PhotoGallery from '@/components/home/photo-gallery';
+import OpenRightCarousalComponent from '@/components/home/open-right-carousal';
+
+import { TestimonialsWithQuoteData } from '@/data/home/testimonialWithQuote.json';
+import { FAQsData } from '@/data/home/faqs.json';
+import { PhotoGalleryData } from '@/data/home/photo-gallery.json';
+import { OpenRightCarousalComponentData } from '@/data/home/OpenRightCarousal.json';
+import TopicWithPhotoandQuestion from '@/components/home/TopicWithPhotoandQuestion';
+import CarousalWithHeadings from '@/components/home/carousal-with-headings';
 
 const slides = [
   {
@@ -84,11 +96,31 @@ export default function HomePage() {
       {/* CTA Section */}
       <CTA />
 
-      <PurityGuaranteed />
-      <ProductJourney />
-      <MostSellingProducts />
+      {/* mehul's component which I have commented out 
+       <PurityGuaranteed />
+      <ProductJourney /> 
+     <MostSellingProducts /> */}
 
+      {/* my component */}
+
+      <TopicWithPhotoandQuestion />
+      <CarousalWithHeadings />
+      <OpenRightCarousalComponent
+        OpenRightCarousalComponentData={OpenRightCarousalComponentData}
+      />
       {/* Add other homepage content here */}
+
+      {/* about us */}
+
+      <AboutUs />
+
+      <TestimonialsWithQuote
+        TestimonialsWithQuoteData={TestimonialsWithQuoteData}
+      />
+
+      <FAQs FAQsData={FAQsData} />
+
+      <PhotoGallery PhotoGalleryData={PhotoGalleryData} />
     </main>
   );
 }

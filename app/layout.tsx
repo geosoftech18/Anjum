@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { heading, body } from '@/lib/font';
 import './globals.css';
+import Footer from '@/components/common/footer';
 
 export const metadata: Metadata = {
   title: 'Anjum',
@@ -18,6 +19,7 @@ export default function RootLayout({
         className={`${heading.variable} ${body.variable} antialiased font-body`}
       >
         {children}
+        <Footer/>
       </body>
     </html>
   );

@@ -1,0 +1,30 @@
+{
+    "OpenRightCarousalComponentData": {
+        "tag": "Our Products",
+        "title": "Most selling products",
+        "items": [
+            {
+                "imagePath": "/home/openrightcarousal.png",
+                "title": "Product Name",
+                "description": "Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+            },
+            {
+                "imagePath": "/home/openrightcarousal.png",
+                "title": "Product Name",
+                "description": "Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+            },
+            {
+                "imagePath": "/home/openrightcarousal.png",
+                "title": "Product Name",
+                "description": "Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+            },
+            {
+                "imagePath": "/home/openrightcarousal.png",
+                "title": "Product Name",
+                "description": "Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+            }
+        ],
+        "button1": "View all products",
+        "button2": "Contact us"
+    }
+}
