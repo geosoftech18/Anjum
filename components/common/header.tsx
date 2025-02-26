@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import { MagnifyingGlassIcon, Bars3Icon } from '@heroicons/react/24/outline';
+import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import {
@@ -93,7 +93,7 @@ const Header = () => {
               <Button
                 color="green"
                 aria-label="Search"
-                className="rounded-l-none after:rounded-l-none dark:after:rounded-l-none before:rounded-l-none dark:before:rounded-l-none"
+                className="rounded-l-none after:rounded-l-none dark:after:rounded-l-none before:rounded-l-none dark:before:rounded-l-none px-[calc(theme(spacing[3.5])-1px)] py-[calc(theme(spacing[2.5])-1px)] sm:px-[calc(theme(spacing[3])-1px)] sm:py-[calc(theme(spacing[1.5])-1px)]"
               >
                 <MagnifyingGlassIcon className="h-5 w-5" />
               </Button>

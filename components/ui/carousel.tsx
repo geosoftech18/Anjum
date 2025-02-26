@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useCallback } from 'react';
 import { motion, AnimatePresence, PanInfo } from 'framer-motion';
 import { Button } from './button';
 import FlowerIcon from '@/assets/flower';
@@ -38,12 +39,12 @@ const slideVariants = {
 
 export const Carousel = ({
   slides,
-  autoPlayInterval = 5000,
+  // autoPlayInterval = 5000,
   animationDuration = 0.5,
   className = '',
 }: CarouselProps) => {
   const [[page, direction], setPage] = useState([0, 0]);
-  const [isPaused, setIsPaused] = useState(false);
+  // const [isPaused, setIsPaused] = useState(false);
   const [dragStart, setDragStart] = useState(0);
 
   const paginate = useCallback(
@@ -60,7 +61,7 @@ export const Carousel = ({
 
   const handleDragStart = (_: any, info: PanInfo) => {
     setDragStart(info.point.x);
-    setIsPaused(true);
+    // setIsPaused(true);
   };
 
   const handleDragEnd = (_: any, info: PanInfo) => {
@@ -70,7 +71,7 @@ export const Carousel = ({
     if (Math.abs(dragDistance) > dragThreshold) {
       paginate(dragDistance > 0 ? -1 : 1);
     }
-    setIsPaused(false);
+    // setIsPaused(false);
   };
 
   const handleKeyDown = useCallback(
@@ -96,8 +97,8 @@ export const Carousel = ({
   return (
     <div
       className={`group relative w-full overflow-hidden ${className}`}
-      onMouseEnter={() => setIsPaused(true)}
-      onMouseLeave={() => setIsPaused(false)}
+      // onMouseEnter={() => setIsPaused(true)}
+      // onMouseLeave={() => setIsPaused(false)}
       onKeyDown={handleKeyDown}
       tabIndex={0}
       role="region"

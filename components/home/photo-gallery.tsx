@@ -1,40 +1,33 @@
-import { Facebook } from "lucide-react";
-import Image from "next/image";
+import { Facebook, Instagram, Twitter } from 'lucide-react';
+import Image from 'next/image';
+import { Text } from '../ui/text';
+import { Heading } from '../ui/heading';
 
-interface PhotoGalleryProps{
-    PhotoGalleryData:{
-        tag:string,
-        title:string,
-        logoWithLinks:{
-            logo:string,
-            link:string
-        }[],
-        photos:{
-            imageUrl:string
-        }[]
-    }
-}
-
-const PhotoGallery:React.FC<PhotoGalleryProps> = ({
-    PhotoGalleryData
-}) => {
+const PhotoGallery: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-center text-[#A54427] bg-[#FFF4DF] gap-10 p-20">
-      {/* tag */}
-      <div  >{PhotoGalleryData.tag}</div>
-      {/* title */}
-      <div className="text-4xl font-light font-[Tinos]">{PhotoGalleryData.title}</div>
+    <div className="flex flex-col items-center justify-center text-white bg-primary-500 gap-10 p-20 pt-10">
+      <div className="flex flex-col items-center justify-center gap-4">
+        <Text className="text-white dark:text-white">Memorable moments</Text>
+        <Heading level={2} className="sm:!text-4xl">
+          Our team, our Journey
+        </Heading>
+      </div>
       {/* logo with social media links */}
       <div className="grid grid-cols-3 gap-5">
-        {PhotoGalleryData.logoWithLinks.map((item,index)=>(
-            <div key={index} className="font-extralight">
-                <Facebook className="h-10 w-10"/>
-            </div>
-        ))}
+        <Facebook className="h-8 w-8" />
+        <Instagram className="h-8 w-8" />
+        <Twitter className="h-8 w-8" />
       </div>
       <div className="grid grid-cols-4 gap-10">
-        {PhotoGalleryData.photos.map((item,index)=>(
-            <Image className="aspect-[3/4] object-cover rounded-xl" key={index} src={item.imageUrl||"/home/hero.webp"} width={1000} height={1000} alt=""/>
+        {Array.from({ length: 4 }).map((_, index) => (
+          <Image
+            className="aspect-[3/4] object-cover rounded-xl"
+            key={index}
+            src={'/home/hero.webp'}
+            width={1000}
+            height={1000}
+            alt=""
+          />
         ))}
       </div>
     </div>

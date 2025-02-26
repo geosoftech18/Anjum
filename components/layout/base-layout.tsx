@@ -28,6 +28,7 @@ const BaseLayout = ({ children }: IProps) => {
         <Header />
       </header>
       <main className="pt-6">{children}</main>
+      <Footer />
     </>
   );
 };
