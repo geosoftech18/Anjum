@@ -13,6 +13,7 @@ import { FAQsData } from '@/data/home/faqs.json';
 import { ProductJourney } from '@/components/home/product-journey';
 import { PurityGuaranteed } from '@/components/home/purity-guaranteed';
 import MostSellingProducts from '@/components/products/MostSellingProducts';
+import Testimonials from '@/components/common/testimonials';
 
 const slides = [
   {
@@ -95,6 +96,8 @@ export default function HomePage() {
       <MostSellingProducts />
 
       <AboutUs />
+
+      <Testimonials />
 
       <FAQs FAQsData={FAQsData} />
 

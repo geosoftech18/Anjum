@@ -3,7 +3,6 @@ import { footerData } from '@/data/footer.json';
 import { ArrowRight, Mail, MapPin, Phone } from 'lucide-react';
 import { Input } from '../ui/shadcnInput';
 import ForsetPattern from '@/assets/patterns/forest';
-import { Button } from '../ui/button';
 
 const Footer = () => {
   return (
