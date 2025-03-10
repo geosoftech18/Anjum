@@ -5,43 +5,22 @@
   --font-body: Montserrat, sans-serif;
 
   /* Primary Colors */
-  --color-primary-50: hsl(15.8 61.3% 93.9%);
-  --color-primary-100: hsl(14.2 61.3% 87.8%);
-  --color-primary-200: hsl(14.2 62.3% 76.1%);
-  --color-primary-300: hsl(14.2 62% 63.9%);
-  --color-primary-400: hsl(13.9 61.6% 52%);
-  --color-primary-500: hsl(13.8 61.8% 40%);
-  --color-primary-600: hsl(14.3 62% 32%);
-  --color-primary-700: hsl(14.2 62.3% 23.9%);
-  --color-primary-800: hsl(13.2 61% 16.1%);
-  --color-primary-900: hsl(14.4 61% 8%);
-  --color-primary-950: hsl(13.8 61.9% 4.1%);
+  --color-primary: #95a834;
+  --color-primary-2: #a54427;
 
   /* Secondary Colors */
-  --color-secondary-50: hsl(60 56.1% 92%);
-  --color-secondary-100: hsl(60 55.6% 84.1%);
-  --color-secondary-200: hsl(60 55.8% 68%);
-  --color-secondary-300: hsl(60 55.6% 53.1%);
-  --color-secondary-400: hsl(60 55.6% 37.1%);
-  --color-secondary-500: hsl(60 55.6% 21.2%);
-  --color-secondary-600: hsl(60 55.8% 16.9%);
-  --color-secondary-700: hsl(60 55.2% 13.1%);
-  --color-secondary-800: hsl(60 56.1% 8%);
-  --color-secondary-900: hsl(60 52.4% 4.1%);
-  --color-secondary-950: hsl(60 60% 2%);
+  --color-secondary: #b45220;
+  --color-secondary-2: #545418;
 
-  /* Background Colors */
-  --color-background-50: hsl(36 100% 99%);
-  --color-background-100: hsl(40 100% 97.1%);
-  --color-background-200: hsl(39.2 100% 94.9%);
-  --color-background-300: hsl(39.5 100% 92%);
-  --color-background-400: hsl(38.8 100% 90%);
-  --color-background-500: hsl(38.5 100% 86.9%);
-  --color-background-600: hsl(38.8 100% 70%);
-  --color-background-700: hsl(38.9 100% 52%);
-  --color-background-800: hsl(38.9 100% 35.1%);
-  --color-background-900: hsl(38.6 100% 17.1%);
-  --color-background-950: hsl(39.1 100% 9%);
+  /* Tertiary Colors */
+  --color-tertiary: #fff8f5;
+  --color-tertiary-2: #fff4df;
+
+  /* TEXT */
+  --color-text: #292929;
+
+  /* GOLD */
+  --color-gold: #b58b42;
 
   /* Radius */
   --radius-4xl: 2rem;

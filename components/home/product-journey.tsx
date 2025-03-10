@@ -63,14 +63,14 @@ export const ProductJourney = ({ className = '' }: ProductJourneyProps) => {
         backgroundImage: 'url(/background/pattern-6.png)',
       }}
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-5">
         <div className="text-center mb-12">
-          <Text className="!text-secondary-500 dark:!text-secondary-500 mb-2">
+          <Text className="text-secondary-2 dark:text-secondary-2 mb-2">
             Product Journey
           </Text>
           <Heading
             level={2}
-            className="text-4xl md:text-5xl !text-secondary-500 dark:!text-secondary-500 font-serif"
+            className="text-3xl sm:text-4xl text-secondary-2 dark:text-secondary-2 font-serif"
           >
             Crafted with care & expertise
           </Heading>
@@ -82,10 +82,10 @@ export const ProductJourney = ({ className = '' }: ProductJourneyProps) => {
             <button
               key={step.id}
               onClick={() => handleStepClick(step.id)}
-              className={`px-4 py-3 text-lg font-medium transition-colors relative ${
+              className={`px-4 py-3 text-base font-medium transition-colors relative ${
                 activeStep === step.id
-                  ? 'text-secondary-500 dark:text-secondary-500'
-                  : 'text-zinc-400 dark:text-zinc-400 hover:text-secondary-500 dark:hover:text-secondary-500'
+                  ? 'text-primary dark:text-primary'
+                  : 'text-zinc-400 dark:text-zinc-400 hover:text-primary dark:hover:text-primary'
               }`}
               aria-label={`View ${step.title} step`}
               tabIndex={0}
@@ -104,11 +104,11 @@ export const ProductJourney = ({ className = '' }: ProductJourneyProps) => {
         </div>
 
         {/* Journey cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="flex flex-col sm:flex-row gap-8 justify-center">
           {journeySteps.slice(0, 3).map((step) => (
             <div
               key={step.id}
-              className="bg-white rounded-xl shadow-sm p-8 transition-all hover:shadow-md flex flex-col items-center text-center"
+              className="bg-white rounded-xl shadow-sm p-8 transition-all hover:shadow-md flex flex-col items-center text-center max-w-80"
             >
               <div className="w-24 h-24 mb-6 relative">
                 <div className="w-full h-full flex items-center justify-center text-[#B88746] dark:text-[#B88746]">

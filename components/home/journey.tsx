@@ -19,7 +19,7 @@ interface StatProps {
 const Stat = ({ number, label, sublabel }: StatProps) => (
   <div className="flex items-center gap-5">
     <div className="flex items-baseline gap-2">
-      <Heading className="text-4xl !text-secondary-400 dark:!text-secondary-400 md:text-5xl xl:text-6xl">
+      <Heading className="text-4xl text-gold dark:text-gold sm:text-5xl">
         {number}
       </Heading>
     </div>
@@ -32,17 +32,15 @@ const Stat = ({ number, label, sublabel }: StatProps) => (
 
 const FeatureItem = ({ children }: { children: React.ReactNode }) => (
   <div className="flex items-center gap-2 py-1.5">
-    <CheckCircleIcon className="h-5 w-5 text-secondary-500" />
-    <Text className="text-base text-zinc-700 dark:text-zinc-700">
-      {children}
-    </Text>
+    <CheckCircleIcon className="h-6 w-h-6 text-secondary-2" />
+    <Text className="text-base text-text dark:text-text">{children}</Text>
   </div>
 );
 
 export const Journey = ({ className = '' }: JourneyProps) => {
   return (
     <section
-      className={`relative overflow-hidden bg-[#f8f5ea] py-16 ${className}`}
+      className={`relative overflow-hidden bg-tertiary py-16 ${className}`}
       style={{
         backgroundImage: 'url(/background/pattern-2.png)',
         backgroundPosition: 'bottom center',
@@ -53,7 +51,7 @@ export const Journey = ({ className = '' }: JourneyProps) => {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
           {/* Left Column - Image with Card */}
-          <div className="relative h-[400px] md:h-[520px] rounded-lg overflow-hidden">
+          <div className="relative h-[380px] md:h-[402px] rounded-lg overflow-hidden">
             {/* Manufacturing Image */}
             <Image
               src="/home/manufacturing.jpg"
@@ -64,39 +62,39 @@ export const Journey = ({ className = '' }: JourneyProps) => {
             />
 
             {/* Overlay Card */}
-            <div className="absolute bottom-[20%] right-0 max-w-[280px] rounded-l-lg bg-white p-6 shadow-lg">
+            <div className="absolute bottom-[20%] right-0 max-w-[260px] w-full rounded-l-lg bg-white p-7 shadow-lg">
               <div className="mb-2 flex justify-center">
                 <Image
                   src="/brand-assets/leaf-icon.svg"
                   alt="Leaf icon"
-                  width={40}
-                  height={40}
+                  width={80}
+                  height={45}
                 />
               </div>
-              <h3 className="mb-2 text-center text-lg font-semibold text-secondary-500">
+              <h3 className="mb-2 text-center text-sm sm:text-base font-semibold text-secondary-2">
                 Ayurvedic practices, ethics at core
               </h3>
-              <p className="text-center text-sm text-zinc-600">
-                Carefully sourced ingredients processed with traditional methods
-                and modern quality control.
+              <p className="text-center text-xs sm:text-xs text-text dark:text-text">
+                Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                vulputate libero et velit interdum.
               </p>
             </div>
           </div>
 
           {/* Right Column - Content */}
           <div className="flex flex-col justify-center">
-            <Text className="mb-1 text-lg font-medium !text-secondary-500 dark:!text-secondary-500">
+            <Text className="mb-1 text-lg !text-secondary-2 dark:!text-secondary-2">
               Our Journey
             </Text>
 
             <Heading
               level={2}
-              className="mb-4 text-4xl font-bold !text-secondary-500 dark:!text-secondary-500 md:text-5xl"
+              className="mb-4 text-3xl !text-secondary-2 dark:!text-secondary-2 md:text-4xl"
             >
               Innovation & Ayurveda at core
             </Heading>
 
-            <Text className="mb-8 text-lg text-zinc-700 dark:text-zinc-700">
+            <Text className="mb-8 text-lg text-text dark:text-text">
               Blending ancient wisdom with modern solutions & delivering
               high-quality products for enhanced holistic well-being.
             </Text>
@@ -114,12 +112,12 @@ export const Journey = ({ className = '' }: JourneyProps) => {
 
           <div className="col-span-full pb-10 flex flex-col gap-4 sm:flex-row sm:gap-16">
             <div className="flex items-center gap-4">
-              <div className="h-16 w-2 bg-secondary-500"></div>
+              <div className="h-16 w-2 bg-secondary-2"></div>
               <div>
-                <Text className="!text-2xl text-secondary-700 dark:text-secondary-700 whitespace-nowrap">
+                <Text className="!text-2xl text-secondary-2 dark:text-secondary-2 font-medium whitespace-nowrap">
                   Our achievements
                 </Text>
-                <Text className="!text-2xl text-secondary-700 dark:text-secondary-700">
+                <Text className="!text-2xl text-secondary-2 dark:text-secondary-2 font-medium">
                   so far
                 </Text>
               </div>

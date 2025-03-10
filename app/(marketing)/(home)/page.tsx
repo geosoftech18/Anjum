@@ -12,6 +12,7 @@ import PhotoGallery from '@/components/home/photo-gallery';
 import { FAQsData } from '@/data/home/faqs.json';
 import { ProductJourney } from '@/components/home/product-journey';
 import { PurityGuaranteed } from '@/components/home/purity-guaranteed';
+import MostSellingProducts from '@/components/products/MostSellingProducts';
 
 const slides = [
   {
@@ -27,7 +28,7 @@ const slides = [
             href: '/about',
           },
           secondary: {
-            label: 'Our Products',
+            label: 'Request a quote',
             href: '/products',
           },
         }}
@@ -66,9 +67,8 @@ const certificationLogos: Logo[] = [
 
 export default function HomePage() {
   return (
-    <main>
+    <main className="w-full">
       <Carousel slides={slides} />
-
       {/* Certificates Section */}
       <Certificates
         title="We are Certified"
@@ -76,6 +76,10 @@ export default function HomePage() {
         knowMoreLink="/about/certifications"
         logos={certificationLogos}
       />
+
+      {/* <div className="relative overflow-hidden w-full h-full py-20">
+        <ProductCarousel.Carousel slides={slideData} />
+      </div> */}
 
       {/* Journey Section */}
       <Journey />
@@ -88,7 +92,7 @@ export default function HomePage() {
 
       <PurityGuaranteed />
       <ProductJourney />
-      {/* <MostSellingProducts /> */}
+      <MostSellingProducts />
 
       <AboutUs />
 

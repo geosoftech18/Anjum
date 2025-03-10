@@ -12,19 +12,16 @@ interface CTAProps {
 export const CTA = ({ className = '' }: CTAProps) => {
   return (
     <section className={`w-full py-8 md:py-5 ${className}`}>
-      <div className="container mx-auto px-4">
-        <div className="relative overflow-hidden rounded-3xl bg-[#B15626] text-white">
+      <div className="container mx-auto px-5">
+        <div className="relative overflow-hidden rounded-3xl bg-primary-2 text-white">
           {/* Background pattern on the right */}
-          <div className="absolute right-0 top-0 bottom-0 w-1/2">
-            <div className="absolute inset-0 opacity-15">
-              <Image
-                src="/background/pattern-3.png"
-                alt=""
-                fill
-                className="object-cover"
-                aria-hidden="true"
-              />
-            </div>
+          <div className="absolute inset-0">
+            <Image
+              src="/background/pattern-3.png"
+              alt=""
+              fill
+              aria-hidden="true"
+            />
           </div>
 
           <div className="relative flex flex-col md:flex-row items-center">
@@ -35,14 +32,14 @@ export const CTA = ({ className = '' }: CTAProps) => {
                   src="/home/ayurvedic-doctor.png"
                   alt="Ayurvedic Doctor"
                   fill
-                  className="rounded-xl object-cover"
+                  className="rounded-xl object-cover z-10"
                 />
               </div>
             </div>
 
             {/* Middle with quote */}
             <div className="flex-1 flex flex-col items-center md:items-start">
-              <Heading className="text-xl md:text-2xl mb-8 leading-relaxed font-light text-center md:text-left">
+              <Heading className="text-xl md:text-2xl mb-5 leading-relaxed font-light text-center md:text-left">
                 &ldquo;In the harmony of Ayurveda and modern science, we find
                 the timeless wisdom of herbal extracts, where nature&apos;s
                 ancient secrets are unveiled through the lens of
@@ -50,7 +47,7 @@ export const CTA = ({ className = '' }: CTAProps) => {
               </Heading>
 
               <Link href="/contact" className="no-underline">
-                <button className="!px-3 !py-1 bg-secondary-400 rounded-xl text-white font-body font-medium text-lg">
+                <button className="!px-6 !py-1 bg-gold rounded-xl text-white font-body font-medium text-lg">
                   Contact us
                 </button>
               </Link>

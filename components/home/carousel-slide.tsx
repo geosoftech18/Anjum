@@ -34,13 +34,13 @@ export const CarouselSlide = ({
         style={{ backgroundImage: `url(${image})` }}
       />
       <div className="absolute inset-0 bg-black/40" />
-      <div className="relative z-20 mx-auto h-full max-w-7xl px-4 sm:px-16">
+      <div className="relative z-20 mx-auto h-full max-w-7xl max-sm:px-4 max-xl:px-16">
         <div className="flex h-full items-center">
-          <div className="max-w-3xl">
-            <Heading className="text-4xl font-bold text-white dark:!text-white md:text-5xl lg:text-6xl">
+          <div className="max-w-4xl px-5">
+            <Heading className="text-4xl font-medium text-white dark:!text-white md:text-5xl lg:text-6xl">
               {title}
             </Heading>
-            <Text className="mt-4 text-xl text-white dark:!text-white">
+            <Text className="mt-4 sm:text-xl text-white dark:!text-white">
               {description}
             </Text>
             {ctaButtons && (
@@ -49,7 +49,7 @@ export const CarouselSlide = ({
                   <Button
                     href={ctaButtons.primary.href}
                     color="white"
-                    className="relative text-secondary-500 dark:!text-secondary-500 hover:scale-105 active:scale-95"
+                    className="relative text-secondary-2 dark:!text-secondary-2 hover:scale-105 active:scale-95"
                   >
                     {ctaButtons.primary.label}
                   </Button>

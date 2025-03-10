@@ -3,12 +3,13 @@ import { footerData } from '@/data/footer.json';
 import { ArrowRight, Mail, MapPin, Phone } from 'lucide-react';
 import { Input } from '../ui/shadcnInput';
 import ForsetPattern from '@/assets/patterns/forest';
+import { Button } from '../ui/button';
 
 const Footer = () => {
   return (
-    <div className="flex bg-[#FFF4DF] flex-col h-full text-white">
+    <div className="flex bg-tertiary-2 flex-col h-full text-white">
       <ForsetPattern className="w-full h-full" />
-      <div className="w-full bg-secondary-500">
+      <div className="w-full bg-secondary-2">
         <div className="container mx-auto grid grid-cols-12 justify-start pt-10 p-20 gap-20">
           <div className="col-span-5 h-4/5 flex flex-col items-start justify-between">
             <div className="flex items-center justify-center gap-5 text-lg">
@@ -58,12 +59,14 @@ const Footer = () => {
               {/* newsletter */}
               <div className="col-span-1 text-base flex flex-col items-start gap-5">
                 <div className="font-semibold ">Subscribe to Newsletter</div>
-                <div className="flex items-center justify-between bg-white rounded-lg p-1">
+                <div className="flex items-center justify-between bg-white rounded-lg px-1 py-0.5">
                   <Input
                     placeholder="Enter mail..."
                     className="bg-white text-[#828282] p-2 border-none shadow-none"
                   ></Input>
-                  <ArrowRight className="h-full w-2/12 text-white bg-[#545418] rounded-lg" />
+                  <button className="bg-secondary-2 text-white p-2 border-none shadow-none rounded-lg h-7 w-7 flex items-center justify-center">
+                    <ArrowRight className="h-3.5 w-3.5 text-white bg-secondary-2 rounded-lg" />
+                  </button>
                 </div>
               </div>
             </div>

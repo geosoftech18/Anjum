@@ -27,12 +27,12 @@ const Header = () => {
             <Dropdown>
               <DropdownButton
                 plain
-                className="flex items-center gap-1 data-[active]:border-b border-0 rounded-none border-solid border-secondary-600 dark:!border-secondary-600 !px-0 sm:!px-0"
+                className="flex items-center gap-1 data-[active]:border-b border-0 rounded-none border-solid border-secondary-2 dark:!border-secondary-2 !px-0 sm:!px-0"
               >
-                <Text className="text-secondary-600 dark:text-secondary-600 font-normal">
+                <Text className="text-secondary-2 dark:text-secondary-2 font-normal">
                   Shop
                 </Text>
-                <ChevronDownIcon className="h-5 w-5 text-secondary-600 dark:text-secondary-600" />
+                <ChevronDownIcon className="h-5 w-5 text-secondary-2 dark:text-secondary-2" />
               </DropdownButton>
               <DropdownMenu>
                 <DropdownItem href="/">Home</DropdownItem>
@@ -44,12 +44,12 @@ const Header = () => {
             <Dropdown>
               <DropdownButton
                 plain
-                className="flex items-center gap-1 data-[active]:border-b border-0 rounded-none border-solid border-secondary-600 dark:!border-secondary-600 !px-0 sm:!px-0"
+                className="flex items-center gap-1 data-[active]:border-b border-0 rounded-none border-solid border-secondary-2 dark:!border-secondary-2 !px-0 sm:!px-0"
               >
-                <Text className="text-secondary-600 dark:text-secondary-600 font-normal">
+                <Text className="text-secondary-2 dark:text-secondary-2 font-normal">
                   About us
                 </Text>
-                <ChevronDownIcon className="h-5 w-5 text-secondary-600 dark:text-secondary-600" />
+                <ChevronDownIcon className="h-5 w-5 text-secondary-2 dark:text-secondary-2" />
               </DropdownButton>
               <DropdownMenu>
                 <DropdownItem href="/">Home</DropdownItem>
@@ -61,7 +61,7 @@ const Header = () => {
 
             <TextLink
               href="/contact-us"
-              className="!text-secondary-600 dark:!text-secondary-600"
+              className="!text-secondary-2 dark:!text-secondary-2"
             >
               Contact us
             </TextLink>

@@ -5,7 +5,7 @@ import { Heading } from '../ui/heading';
 
 const PhotoGallery: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-center text-white bg-primary-500 gap-10 p-20 pt-10">
+    <div className="flex flex-col items-center justify-center text-white bg-primary-2 gap-10 p-20 pt-10">
       <div className="flex flex-col items-center justify-center gap-4">
         <Text className="text-white dark:text-white">Memorable moments</Text>
         <Heading level={2} className="sm:!text-4xl">

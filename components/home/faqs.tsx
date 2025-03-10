@@ -17,15 +17,15 @@ interface FAQsInterface {
 
 const FAQs: React.FC<FAQsInterface> = ({ FAQsData }) => {
   return (
-    <section className="w-full bg-background-200">
+    <section className="w-full bg-tertiary-2">
       <div className="flex flex-col items-center justify-center container mx-auto p-20 px-40 gap-14">
         <div className="flex flex-col items-center justify-center gap-4">
-          <Text className="!text-secondary-500 dark:!text-secondary-500">
+          <Text className="!text-secondary-2 dark:!text-secondary-2">
             {FAQsData.tag}
           </Text>
           <Heading
             level={2}
-            className="!text-secondary-500 dark:!text-secondary-500 sm:!text-4xl"
+            className="!text-secondary-2 dark:!text-secondary-2 sm:!text-4xl"
           >
             {FAQsData.title}
           </Heading>
@@ -35,14 +35,14 @@ const FAQs: React.FC<FAQsInterface> = ({ FAQsData }) => {
           {FAQsData.items.map((item, index) => (
             <Card
               key={index}
-              className="p-5 flex flex-col justify-start gap-5 border-none shadow-none"
+              className="flex flex-col justify-start gap-5 border-none shadow-none"
             >
-              <Mail className="bg-[#A54427] p-2 rounded-full  h-8 w-8 text-white" />
+              <Mail className="bg-[#A54427] p-2 rounded-full  h-9 w-9 text-white" />
               <div className="flex flex-col justify-start gap-1">
-                <Text className="text-secondary-500 dark:!text-secondary-500 font-semibold">
+                <Text className="text-secondary-2 dark:!text-secondary-2 font-semibold">
                   {item.title}
                 </Text>
-                <Text className="sm:!text-sm text-secondary-500 dark:!text-secondary-500">
+                <Text className="sm:!text-xs text-secondary-2 dark:!text-secondary-2">
                   {item.text}
                 </Text>
               </div>

@@ -50,7 +50,7 @@ export const Certificates = ({
 }: CertificatesProps) => {
   return (
     <section
-      className={`relative pt-6 pb-4 border-b-8 border-secondary-400 ${className}`}
+      className={`relative pt-6 pb-4 border-b-8 border-gold ${className}`}
       style={{
         backgroundImage: 'url(/background/pattern-1.png)',
         backgroundColor: '#65582C',
@@ -58,19 +58,19 @@ export const Certificates = ({
         backgroundPosition: 'center',
       }}
     >
-      <div className="mx-auto container">
+      <div className="mx-auto container px-5">
         <div className="w-full flex flex-col sm:flex-row justify-between">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between">
             <div className="mb-6 md:mb-0">
               <Heading
                 level={2}
-                className="text-3xl font-bold text-white md:text-4xl"
+                className="text-3xl font-medium text-white md:text-4xl"
               >
                 {title}
               </Heading>
 
               <div className="mt-2 flex items-center">
-                <Text className="text-lg text-white dark:text-white">
+                <Text className="text-lg sm:text-xl text-white dark:text-white">
                   {description}
                 </Text>
 
@@ -80,7 +80,7 @@ export const Certificates = ({
                   tabIndex={0}
                   aria-label="Learn more about our certifications"
                 >
-                  <span className="text-sm">Know more</span>
+                  <span className="text-base">Know more</span>
                   <span className="ml-1">&#8250;</span>
                 </Link>
               </div>

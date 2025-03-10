@@ -11,17 +11,17 @@ export const PurityGuaranteed = () => {
     <section
       className={`w-full py-16 relative overflow-hidden bg-background-100 bg-no-repeat bg-contain bg-[url('/background/TopicWithPhotoandQuestionbg.png')]`}
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-5">
         <div className="flex flex-col lg:flex-row items-center gap-12 relative">
           {/* Left content */}
           <div className="lg:w-1/2 z-10 space-y-6">
             <Heading
               level={2}
-              className="text-4xl md:text-5xl !text-secondary-500 dark:!text-secondary-500"
+              className="text-4xl md:text-5xl !text-secondary-2 dark:!text-secondary-2"
             >
               Purity Guaranteed
             </Heading>
-            <Text className="text-zinc-700 dark:text-zinc-700">
+            <Text className="text-text dark:text-text">
               Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
               vulputate libero et velit interdum, ac aliquet odio mattis. Class
               aptent taciti sociosqu ad litora torquent per conubia nostra, per
@@ -30,12 +30,12 @@ export const PurityGuaranteed = () => {
             </Text>
             <Heading
               level={3}
-              className="text-2xl md:text-3xl !text-secondary-500 dark:!text-secondary-500 mb-4"
+              className="text-lg sm:text-xl font-bold !text-text dark:!text-text mb-4"
             >
               Why Anjum Extractions?
             </Heading>
 
-            <Text className="text-neutral-700 dark:text-neutral-700">
+            <Text className="text-text dark:text-text">
               Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
               vulputate libero et velit interdum, ac aliquet odio mattis. Class
               aptent taciti sociosqu ad litora torquent per conubia nostra, per
@@ -44,7 +44,7 @@ export const PurityGuaranteed = () => {
             </Text>
 
             <Link href="/shop" className="no-underline">
-              <button className="!px-3 !py-1 bg-primary-400 rounded-xl text-white font-body font-medium text-lg">
+              <button className="!px-5 !py-2.5 bg-primary rounded-xl text-white font-body font-medium text-lg">
                 Explore shop
               </button>
             </Link>

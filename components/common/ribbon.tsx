@@ -8,8 +8,8 @@ interface IProps {
 
 const Ribbon = ({ start, center, end }: IProps) => {
   return (
-    <div className="w-full bg-primary-500">
-      <div className="container mx-auto">
+    <div className="w-full bg-primary-2">
+      <div className="container mx-auto px-5">
         <div className="flex items-center justify-between">
           <div>{start}</div>
           <div>{center}</div>

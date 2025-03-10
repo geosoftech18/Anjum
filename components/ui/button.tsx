@@ -116,7 +116,7 @@ const styles = {
       '[--btn-icon:theme(colors.lime.600)] data-[active]:[--btn-icon:theme(colors.lime.700)] data-[hover]:[--btn-icon:theme(colors.lime.700)]',
     ],
     green: [
-      'text-white [--btn-hover-overlay:theme(colors.white/10%)] [--btn-bg:theme(colors.secondary.500)] [--btn-border:theme(colors.secondary.700/90%)]',
+      'text-white [--btn-hover-overlay:theme(colors.white/10%)] [--btn-bg:theme(colors.secondary.2)] [--btn-border:theme(colors.secondary.2/90%)]',
       '[--btn-icon:theme(colors.white)] data-[active]:[--btn-icon:theme(colors.white/80%)] data-[hover]:[--btn-icon:theme(colors.white/80%)]',
     ],
     emerald: [

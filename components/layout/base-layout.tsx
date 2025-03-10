@@ -15,11 +15,17 @@ const BaseLayout = ({ children }: IProps) => {
         <Ribbon
           end={
             <div className="flex items-center gap-2 text-sm">
-              <TextLink href="tel:+917891600000" className="!no-underline">
+              <TextLink
+                href="tel:+917891600000"
+                className="!no-underline text-white dark:text-white"
+              >
                 +91 78916 00000
               </TextLink>
               <Text className="text-white dark:text-white">|</Text>
-              <TextLink href="mailto:connect@anjumextraction.in">
+              <TextLink
+                href="mailto:connect@anjumextraction.in"
+                className="text-white dark:text-white"
+              >
                 connect@anjumextraction.in
               </TextLink>
             </div>

@@ -12,14 +12,14 @@ interface ServiceCardProps {
 }
 
 const ServiceCard = ({ icon, title, description }: ServiceCardProps) => (
-  <div className="flex h-full flex-col rounded-3xl bg-secondary-100 p-6">
+  <div className="flex h-full flex-col rounded-3xl bg-gold/20 p-6">
     <div className="mb-4 flex items-center gap-4">
       <Image src={icon} alt={title} width={48} height={48} />
-      <Text className="text-xl font-medium !text-secondary-800 dark:!text-secondary-800">
+      <Text className="text-xl font-medium !text-secondary-2 dark:!text-secondary-2">
         {title}
       </Text>
     </div>
-    <Text className="text-zinc-700 dark:text-zinc-700">{description}</Text>
+    <Text className="text-text dark:text-text">{description}</Text>
   </div>
 );
 
@@ -56,16 +56,16 @@ export const Mission = ({ className = '' }: MissionProps) => {
   ];
 
   return (
-    <section className={`py-16 bg-[#FFFBF2] ${className}`}>
+    <section className={`py-16 bg-tertiary ${className}`}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-6">
-          <Text className="mb-2 text-lg font-medium !text-secondary-500 dark:!text-secondary-500">
+          <Text className="mb-2 text-lg font-medium !text-secondary-2 dark:!text-secondary-2">
             Our mission
           </Text>
 
           <Heading
             level={2}
-            className="mx-auto max-w-4xl text-2xl !text-secondary-600 dark:!text-secondary-600"
+            className="mx-auto max-w-4xl text-2xl !text-secondary-2 dark:!text-secondary-2"
           >
             &ldquo;We are committed to empowering our customers through reliable
             high-quality herbal extracts and formulations that bridge tradition
