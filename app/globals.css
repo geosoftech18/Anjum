@@ -37,8 +37,8 @@
   @media (width >= 64rem /* 1024px */) {
     max-width: 64rem /* 1024px */;
   }
-  @media (width >= 72rem /* 1280px */) {
-    max-width: 72rem /* 1280px */;
+  @media (width >= 76rem /* 1280px */) {
+    max-width: 76rem /* 1280px */;
   }
   @media (width >= 96rem /* 1536px */) {
     max-width: 96rem /* 1536px */;
