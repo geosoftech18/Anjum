@@ -96,8 +96,8 @@ const MostSellingProducts = () => {
   }, []);
 
   return (
-    <section className="bg-tertiary-2/50">
-      <div className="container mx-auto px-5 py-16 space-y-4">
+    <section className="bg-tertiary">
+      <div className="container py-20 space-y-4">
         <Text className="text-center !text-secondary-2 dark:!text-secondary-2">
           Our Products
         </Text>

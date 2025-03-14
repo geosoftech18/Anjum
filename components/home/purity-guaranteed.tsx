@@ -9,9 +9,9 @@ import { Text } from '../ui/text';
 export const PurityGuaranteed = () => {
   return (
     <section
-      className={`w-full py-16 relative overflow-hidden bg-background-100 bg-no-repeat bg-contain bg-[url('/background/TopicWithPhotoandQuestionbg.png')]`}
+      className={`w-full relative overflow-hidden bg-tertiary bg-no-repeat bg-contain bg-[url('/background/TopicWithPhotoandQuestionbg.png')]`}
     >
-      <div className="container mx-auto px-5">
+      <div className="container py-20">
         <div className="flex flex-col lg:flex-row items-center gap-12 relative">
           {/* Left content */}
           <div className="lg:w-1/2 z-10 space-y-6">

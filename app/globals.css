@@ -13,7 +13,7 @@
   --color-secondary-2: #545418;
 
   /* Tertiary Colors */
-  --color-tertiary: #fff8f5;
+  --color-tertiary: #fff9ef;
   --color-tertiary-2: #fff4df;
 
   /* TEXT */
@@ -28,19 +28,40 @@
 
 .container {
   width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
   @media (width >= 40rem /* 640px */) {
     max-width: 40rem /* 640px */;
   }
   @media (width >= 48rem /* 768px */) {
     max-width: 48rem /* 768px */;
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
   }
   @media (width >= 64rem /* 1024px */) {
     max-width: 64rem /* 1024px */;
   }
-  @media (width >= 76rem /* 1280px */) {
-    max-width: 76rem /* 1280px */;
+  @media (width >= 80rem /* 1280px */) {
+    max-width: 80rem /* 1280px */;
+    padding-left: 4.25rem;
+    padding-right: 4.25rem;
   }
   @media (width >= 96rem /* 1536px */) {
     max-width: 96rem /* 1536px */;
+  }
+}
+
+.container[data-padding='false'] {
+  padding-left: 0;
+  padding-right: 0;
+  @media (width >= 48rem /* 768px */) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @media (width >= 80rem /* 1280px */) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }

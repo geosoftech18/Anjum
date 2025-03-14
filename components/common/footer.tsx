@@ -61,7 +61,7 @@ const Footer = () => {
                 <div className="flex items-center justify-between bg-white rounded-lg px-1 py-0.5">
                   <Input
                     placeholder="Enter mail..."
-                    className="bg-white text-[#828282] p-2 border-none shadow-none"
+                    className="bg-white text-secondary-2 p-2 border-none shadow-none"
                   ></Input>
                   <button className="bg-secondary-2 text-white p-2 border-none shadow-none rounded-lg h-7 w-7 flex items-center justify-center">
                     <ArrowRight className="h-3.5 w-3.5 text-white bg-secondary-2 rounded-lg" />
@@ -70,7 +70,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="row-span-1 flex items-center justify-around border border-white m-4 relative p-4 rounded-lg py-10">
-              <div className="absolute flex items-center justify-center -top-4 left-5 rounded-full bg-white text-[#545418] text-xs p-1 px-2 w-32 font-medium">
+              <div className="absolute flex items-center justify-center -top-4 left-5 rounded-full bg-white text-secondary-2 text-xs p-1 px-2 w-32 font-medium">
                 {footerData.availableOn.label}
               </div>
               {footerData.availableOn.items.map((item, index) => (

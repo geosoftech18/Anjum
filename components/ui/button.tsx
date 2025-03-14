@@ -169,16 +169,16 @@ type ButtonProps = (
 
 export const Button = forwardRef(function Button(
   { color, outline, plain, className, children, ...props }: ButtonProps,
-  ref: React.ForwardedRef<HTMLElement>
+  ref: React.ForwardedRef<HTMLElement>,
 ) {
   const classes = clsx(
     styles.base,
     outline
       ? styles.outline
       : plain
-      ? styles.plain
-      : clsx(styles.solid, styles.colors[color ?? 'dark/zinc']),
-    className
+        ? styles.plain
+        : clsx(styles.solid, styles.colors[color ?? 'dark/zinc']),
+    className,
   );
 
   return 'href' in props ? (

@@ -1,38 +1,38 @@
 {
-    "FAQsData":{
-        "tag":"FAQ",
-        "title":"Frequently Asked Questions",
-        "items":[
-            {
-                "logo":"",
-                "title":"How do I change my account email?",
-                "text":"You can log in to your account and change it from your Profile > Edit Profile. Then go to the general tab to change your email."
-            },
-            {
-                "logo":"",
-                "title":"How do I change my account email?",
-                "text":"You can log in to your account and change it from your Profile > Edit Profile. Then go to the general tab to change your email."
-            },
-            {
-                "logo":"",
-                "title":"How do I change my account email?",
-                "text":"You can log in to your account and change it from your Profile > Edit Profile. Then go to the general tab to change your email."
-            },
-            {
-                "logo":"",
-                "title":"How do I change my account email?",
-                "text":"You can log in to your account and change it from your Profile > Edit Profile. Then go to the general tab to change your email."
-            },
-            {
-                "logo":"",
-                "title":"How do I change my account email?",
-                "text":"You can log in to your account and change it from your Profile > Edit Profile. Then go to the general tab to change your email."
-            },
-            {
-                "logo":"",
-                "title":"How do I change my account email?",
-                "text":"You can log in to your account and change it from your Profile > Edit Profile. Then go to the general tab to change your email."
-            }
-        ]
-    }
+  "FAQsData": {
+    "tag": "FAQ",
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "logo": "",
+        "title": "How do I change my account email?",
+        "text": "You can log in to your account and change it from your Profile > Edit Profile. Then go to the general tab to change your email."
+      },
+      {
+        "logo": "",
+        "title": "How do I change my account email?",
+        "text": "You can log in to your account and change it from your Profile > Edit Profile. Then go to the general tab to change your email."
+      },
+      {
+        "logo": "",
+        "title": "How do I change my account email?",
+        "text": "You can log in to your account and change it from your Profile > Edit Profile. Then go to the general tab to change your email."
+      },
+      {
+        "logo": "",
+        "title": "How do I change my account email?",
+        "text": "You can log in to your account and change it from your Profile > Edit Profile. Then go to the general tab to change your email."
+      },
+      {
+        "logo": "",
+        "title": "How do I change my account email?",
+        "text": "You can log in to your account and change it from your Profile > Edit Profile. Then go to the general tab to change your email."
+      },
+      {
+        "logo": "",
+        "title": "How do I change my account email?",
+        "text": "You can log in to your account and change it from your Profile > Edit Profile. Then go to the general tab to change your email."
+      }
+    ]
+  }
 }

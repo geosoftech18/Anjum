@@ -56,7 +56,7 @@ export const Carousel = ({
         return [nextPage, newDirection];
       });
     },
-    [slides.length]
+    [slides.length],
   );
 
   const handleDragStart = (_: any, info: PanInfo) => {
@@ -82,7 +82,7 @@ export const Carousel = ({
         paginate(1);
       }
     },
-    [paginate]
+    [paginate],
   );
 
   // useEffect(() => {

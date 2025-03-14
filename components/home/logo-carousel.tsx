@@ -76,12 +76,12 @@ export const LogoCarousel = ({
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -50 }}
           transition={{ duration: 0.5 }}
-          className="flex items-center justify-around gap-4 px-4"
+          className="flex items-center justify-around gap-10 sm:gap-20 px-4"
         >
           {getVisibleLogos().map((logo, index) => (
             <div
               key={`${logo.src}-${index}`}
-              className="flex items-center justify-center p-2"
+              className="flex items-center justify-center"
             >
               {logo.href ? (
                 <a

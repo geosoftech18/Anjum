@@ -1,26 +1,25 @@
 {
-    "TestimonialsWithQuoteData": {
-      "tag": "Testimonials",
-      "title": "Loved by Brands, Cherished by People",
-      "items": [
-        {
-          "imageUrl": "",
-          "name": "Alice Johnson",
-          "text": "This product has exceeded my expectations! The quality is top-notch, and the customer service was excellent."
-        },
-        {
-          "imageUrl": "",
-          "name": "Michael Smith",
-          "text": "Absolutely love this! The experience was smooth, and I would highly recommend it to anyone."
-        },
-        {
-          "imageUrl": "",
-          "name": "Emily Carter",
-          "text": "A game-changer for me. I've tried many alternatives, but this one stands out with its efficiency and design."
-        }
-      ],
-      "quote": "“ Anjum is the most authentic platform to source extracts ”",
-      "button": "Go to shop"
-    }
+  "TestimonialsWithQuoteData": {
+    "tag": "Testimonials",
+    "title": "Loved by Brands, Cherished by People",
+    "items": [
+      {
+        "imageUrl": "",
+        "name": "Alice Johnson",
+        "text": "This product has exceeded my expectations! The quality is top-notch, and the customer service was excellent."
+      },
+      {
+        "imageUrl": "",
+        "name": "Michael Smith",
+        "text": "Absolutely love this! The experience was smooth, and I would highly recommend it to anyone."
+      },
+      {
+        "imageUrl": "",
+        "name": "Emily Carter",
+        "text": "A game-changer for me. I've tried many alternatives, but this one stands out with its efficiency and design."
+      }
+    ],
+    "quote": "“ Anjum is the most authentic platform to source extracts ”",
+    "button": "Go to shop"
   }
-  
+}

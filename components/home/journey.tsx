@@ -40,7 +40,7 @@ const FeatureItem = ({ children }: { children: React.ReactNode }) => (
 export const Journey = ({ className = '' }: JourneyProps) => {
   return (
     <section
-      className={`relative overflow-hidden bg-tertiary py-16 ${className}`}
+      className={`relative overflow-hidden bg-tertiary ${className}`}
       style={{
         backgroundImage: 'url(/background/pattern-2.png)',
         backgroundPosition: 'bottom center',
@@ -48,7 +48,7 @@ export const Journey = ({ className = '' }: JourneyProps) => {
         backgroundSize: '100% auto',
       }}
     >
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="container py-20">
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
           {/* Left Column - Image with Card */}
           <div className="relative h-[380px] md:h-[402px] rounded-lg overflow-hidden">

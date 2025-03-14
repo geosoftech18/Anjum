@@ -1,87 +1,141 @@
-'use client';
-
 import React from 'react';
+import { Text } from '../ui/text';
+import { Heading } from '../ui/heading';
+import { TabGroup, TabList, Tab, TabPanels, TabPanel } from '../ui/tabs';
 import Image from 'next/image';
-import { Heading } from '@/components/ui/heading';
-import { Text } from '@/components/ui/text';
+import { Button } from '../ui/button';
 
-interface ServiceCardProps {
-  icon: string;
-  title: string;
-  description: string;
-}
-
-const ServiceCard = ({ icon, title, description }: ServiceCardProps) => (
-  <div className="flex h-full flex-col rounded-3xl bg-gold/20 p-6">
-    <div className="mb-4 flex items-center gap-4">
-      <Image src={icon} alt={title} width={48} height={48} />
-      <Text className="text-xl font-medium !text-secondary-2 dark:!text-secondary-2">
-        {title}
-      </Text>
-    </div>
-    <Text className="text-text dark:text-text">{description}</Text>
-  </div>
-);
-
-interface MissionProps {
-  className?: string;
-}
-
-export const Mission = ({ className = '' }: MissionProps) => {
-  // Sample placeholder text - replace with actual content
-  const placeholderText =
-    'Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Curabitur tempus urna at turpis condimentum lobortis.';
-
-  const services = [
-    {
-      icon: '/brand-assets/private-labelling-icon.svg',
-      title: 'Private Labelling',
-      description: placeholderText,
-    },
-    {
-      icon: '/brand-assets/custom-formulations-icon.svg',
-      title: 'Custom Formulations',
-      description: placeholderText,
-    },
-    {
-      icon: '/brand-assets/gmp-certified-icon.svg',
-      title: 'GMP-Certified',
-      description: placeholderText,
-    },
-    {
-      icon: '/brand-assets/qc-checks-icon.svg',
-      title: 'QC Checks',
-      description: placeholderText,
-    },
-  ];
-
+export const Mission = () => {
   return (
-    <section className={`py-16 bg-tertiary ${className}`}>
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-6">
-          <Text className="mb-2 text-lg font-medium !text-secondary-2 dark:!text-secondary-2">
-            Our mission
-          </Text>
-
-          <Heading
-            level={2}
-            className="mx-auto max-w-4xl text-2xl !text-secondary-2 dark:!text-secondary-2"
-          >
-            &ldquo;We are committed to empowering our customers through reliable
-            high-quality herbal extracts and formulations that bridge tradition
-            and modernity.&rdquo;
-          </Heading>
-        </div>
-
-        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-          {services.map((service, index) => (
-            <ServiceCard
-              key={index}
-              icon={service.icon}
-              title={service.title}
-              description={service.description}
-            />
-          ))}
+    <section className="w-full bg-tertiary-2 bg-[url('/background/pattern-7.svg')] bg-contain bg-no-repeat bg-right-bottom">
+      <div className='container py-20'>
+        <div className='space-y-12'>
+          <div className='space-y-3'>
+            <Text className='text-secondary-2 dark:text-secondary-2'>Why us?</Text>
+            <Heading className='text-secondary-2 dark:text-secondary-2 sm:text-4xl'>From Manufacturing to Branding</Heading>
+          </div>
+            <TabGroup defaultIndex={0}>
+              <TabList className="flex justify-start flex-wrap gap-2 mb-8 border-0">
+                <Tab className="bg-secondary-2 text-tertiary rounded-full py-2.5 px-6 hover:bg-secondary hover:text-white" activeClassName="bg-secondary text-white dark:text-white" inactiveClassName="bg-secondary-2 text-tertiary hover:bg-secondary">
+                  Private Labelling
+                </Tab>
+                <Tab className="bg-secondary-2 text-tertiary rounded-full py-2.5 px-6 hover:bg-secondary hover:text-white" activeClassName="bg-gold text-white dark:text-white" inactiveClassName="bg-secondary-2 text-tertiary hover:bg-secondary">
+                  Custom Formulations
+                </Tab>
+                <Tab className="bg-secondary-2 text-tertiary rounded-full py-2.5 px-6 hover:bg-secondary hover:text-white" activeClassName="bg-gold text-white dark:text-white" inactiveClassName="bg-secondary-2 text-tertiary hover:bg-secondary">
+                  GMP Certified
+                </Tab>
+                <Tab className="bg-secondary-2 text-tertiary rounded-full py-2.5 px-6 hover:bg-secondary hover:text-white" activeClassName="bg-gold text-white dark:text-white" inactiveClassName="bg-secondary-2 text-tertiary hover:bg-secondary">
+                  QC Testing
+                </Tab>
+              </TabList>
+              
+              <TabPanels>
+                <TabPanel className="flex flex-col md:flex-row gap-16 items-center">
+                  <div className="w-full max-w-lg">
+                    <Image 
+                      src="/home/mission/mission.jpg"
+                      alt="Private Labelling" 
+                      width={500} 
+                      height={500}
+                      className="rounded-md object-cover w-full h-auto aspect-square"
+                    />
+                  </div>
+                  <div className="md:w-1/2 space-y-6">
+                    <Heading level={3} className="text-secondary-2 dark:text-secondary-2 sm:text-3xl">Our products your label</Heading>
+                    <div>
+                    <Text>
+                      Porem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.
+                    </Text>
+                    <Text>
+                      Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    </Text>
+                    </div>
+                    <Button color='green' className='sm:text-lg sm:!py-2 sm:!px-9'>
+                        Know more
+                    </Button>
+                  </div>
+                </TabPanel>
+                
+                <TabPanel className="flex flex-col md:flex-row gap-16 items-start">
+                  <div className="w-full max-w-lg">
+                    <Image 
+                      src="/home/mission/mission.jpg"
+                      alt="Custom Formulations" 
+                      width={500} 
+                      height={500}
+                      className="rounded-md object-cover w-full h-auto aspect-square"
+                    />
+                  </div>
+                  <div className="md:w-1/2 space-y-4">
+                    <Heading level={3} className="text-secondary-2 text-2xl">Custom Formulations</Heading>
+                    <Text >
+                      Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate nisi. Integer in felis sed leo vestibulum venenatis.
+                    </Text>
+                    <Text >
+                      Suspendisse quis arcu sem. Aenean feugiat ex eu vestibulum vestibulum. Morbi a eleifend magna. Nam metus lacus, porttitor eu mauris a, blandit ultrices nibh.
+                    </Text>
+                    <div className="pt-4">
+                      <a href="#" className="inline-flex items-center justify-center px-6 py-3 bg-secondary-2 text-tertiary rounded-full hover:bg-secondary transition-colors">
+                        Know more
+                      </a>
+                    </div>
+                  </div>
+                </TabPanel>
+                
+                <TabPanel className="flex flex-col md:flex-row gap-16 items-start">
+                  <div className="w-full max-w-lg">
+                    <Image 
+                      src="/home/mission/mission.jpg"
+                      alt="GMP Certified" 
+                      width={500} 
+                      height={500}
+                      className="rounded-md object-cover w-full h-auto aspect-square"
+                    />
+                  </div>
+                  <div className="md:w-1/2 space-y-4">
+                    <Heading level={3} className="text-secondary-2 text-2xl">GMP Certified</Heading>
+                    <Text >
+                      Mauris sit amet magna non ligula vestibulum eleifend. Nulla varius volutpat turpis sed lacinia. Nam eget mi in purus lobortis eleifend. 
+                    </Text>
+                    <Text >
+                      Sed nec ante dictum sem condimentum ullamcorper quis venenatis nisi. Proin vitae facilisis nisi, ac posuere leo.
+                    </Text>
+                    <div className="pt-4">
+                      <a href="#" className="inline-flex items-center justify-center px-6 py-3 bg-secondary-2 text-tertiary rounded-full hover:bg-secondary transition-colors">
+                        Know more
+                      </a>
+                    </div>
+                  </div>
+                </TabPanel>
+                
+                <TabPanel className="flex flex-col md:flex-row gap-16 items-start">
+                  <div className="w-full max-w-lg">
+                    <Image 
+                      src="/home/mission/mission.jpg"
+                      alt="QC Testing" 
+                      width={500} 
+                      height={500}
+                      className="rounded-md object-cover w-full h-auto aspect-square"
+                    />
+                  </div>
+                  <div className="md:w-1/2 space-y-4">
+                    <Heading level={3} className="text-secondary-2 text-2xl">QC Testing</Heading>
+                    <Text >
+                      Porem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan.
+                    </Text>
+                    <Text >
+                      Risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.
+                    </Text>
+                    <div className="pt-4">
+                      <a href="#" className="inline-flex items-center justify-center px-6 py-3 bg-secondary-2 text-tertiary rounded-full hover:bg-secondary transition-colors">
+                        Know more
+                      </a>
+                    </div>
+                  </div>
+                </TabPanel>
+              </TabPanels>
+            </TabGroup>
         </div>
       </div>
     </section>

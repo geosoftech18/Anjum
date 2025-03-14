@@ -1,5 +1,6 @@
+'use client';
 import Image from 'next/image';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -16,12 +17,50 @@ import {
   UserIcon,
 } from '@heroicons/react/20/solid';
 import { Text, TextLink } from '../ui/text';
+import { cn } from '@/lib/utils';
+import { useMotionValue, motion, useTransform } from 'framer-motion';
 
 const Header = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const scrollY = useMotionValue(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.scrollY;
+      setScrollPosition(position);
+      scrollY.set(position);
+    };
+
+    // Set initial scroll position when component mounts
+    setScrollPosition(window.scrollY);
+    scrollY.set(window.scrollY);
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [scrollY]);
+
+  const shrinkNavbar = scrollPosition >= 80;
+
+  // Transform values based on scroll position
+  const navMargin = useTransform(scrollY, [0, 80], [20, 0]);
+  const borderRadius = useTransform(scrollY, [0, 80], [32, 0]);
+  const logoScale = useTransform(scrollY, [0, 80], [1.5, 1]);
+
   return (
-    <nav className="w-full">
-      <div className="container bg-white mx-auto rounded-b-4xl shadow-lg px-14 py-1">
-        <div className="flex items-center justify-between gap-4">
+    <motion.nav
+      style={{ marginTop: navMargin }}
+      className="w-full transition-all duration-300 ease-in-out"
+    >
+      <div className="container">
+        <motion.div
+          style={{
+            borderTopLeftRadius: borderRadius,
+            borderTopRightRadius: borderRadius,
+          }}
+          className="flex items-center justify-between gap-4 bg-white mx-auto rounded-4xl shadow-lg px-10 transition-all duration-300 ease-in-out"
+        >
           {/* start - Navigation Menu */}
           <div className="flex items-center gap-10">
             <Dropdown>
@@ -69,16 +108,21 @@ const Header = () => {
 
           {/* center - Logo */}
           <div className="flex justify-center">
-            <Link href="/" aria-label="Home">
-              <Image
-                src="/brand-assets/logo.png"
-                alt="Anjum Logo"
-                width={96}
-                height={64}
-                className="h-16 w-auto"
-                priority
-              />
-            </Link>
+            <motion.div
+              style={{ scale: logoScale }}
+              className="transition-transform duration-300 ease-in-out"
+            >
+              <Link href="/" aria-label="Home">
+                <Image
+                  src="/brand-assets/logo.svg"
+                  alt="Anjum Logo"
+                  width={96}
+                  height={64}
+                  className="h-16 w-auto"
+                  priority
+                />
+              </Link>
+            </motion.div>
           </div>
 
           {/* end - Search */}
@@ -105,9 +149,9 @@ const Header = () => {
               <UserIcon className="h-5 w-5 !text-secondary-700 dark:!text-secondary-700" />
             </Button>
           </div>
-        </div>
+        </motion.div>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 

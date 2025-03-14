@@ -70,37 +70,21 @@ export default function HomePage() {
   return (
     <main className="w-full">
       <Carousel slides={slides} />
-      {/* Certificates Section */}
       <Certificates
         title="We are Certified"
         description="Understand value of each certification"
         knowMoreLink="/about/certifications"
         logos={certificationLogos}
       />
-
-      {/* <div className="relative overflow-hidden w-full h-full py-20">
-        <ProductCarousel.Carousel slides={slideData} />
-      </div> */}
-
-      {/* Journey Section */}
       <Journey />
-
-      {/* Mission Section */}
       <Mission />
-
-      {/* CTA Section */}
       <CTA />
-
       <PurityGuaranteed />
       <ProductJourney />
       <MostSellingProducts />
-
       <AboutUs />
-
       <Testimonials />
-
       <FAQs FAQsData={FAQsData} />
-
       <PhotoGallery />
     </main>
   );

@@ -11,9 +11,9 @@ interface CTAProps {
 
 export const CTA = ({ className = '' }: CTAProps) => {
   return (
-    <section className={`w-full py-8 md:py-5 ${className}`}>
-      <div className="container mx-auto px-5">
-        <div className="relative overflow-hidden rounded-3xl bg-primary-2 text-white">
+    <section className={`w-full bg-tertiary-2 ${className}`}>
+      <div className="container py-20">
+        <div className="relative rounded-3xl bg-primary-2 text-white">
           {/* Background pattern on the right */}
           <div className="absolute inset-0">
             <Image
@@ -26,20 +26,19 @@ export const CTA = ({ className = '' }: CTAProps) => {
 
           <div className="relative flex flex-col md:flex-row items-center">
             {/* Left side with doctor image */}
-            <div className="flex-shrink-0 md:w-1/3 lg:w-1/4 mb-8 md:mb-0 md:mr-8">
-              <div className="relative w-[200px] h-[250px] sm:w-[220px] sm:h-[280px] md:w-[240px] md:h-[300px]">
+            <div className="flex-shrink-0 md:w-1/3 lg:w-1/4 mb-8 md:mb-0">
                 <Image
-                  src="/home/ayurvedic-doctor.png"
+                  src="/home/cta/ayurvedic-doctor.png"
                   alt="Ayurvedic Doctor"
-                  fill
-                  className="rounded-xl object-cover z-10"
+                  width={230}
+                  height={295}
+                  className="rounded-xl object-cover z-10 w-[230px] h-[295px]"
                 />
-              </div>
             </div>
 
             {/* Middle with quote */}
-            <div className="flex-1 flex flex-col items-center md:items-start">
-              <Heading className="text-xl md:text-2xl mb-5 leading-relaxed font-light text-center md:text-left">
+            <div className="flex-1 flex flex-col items-center md:items-start pr-10 pl-5">
+              <Heading className="text-xl md:text-2xl mb-5 font-light text-center md:text-left">
                 &ldquo;In the harmony of Ayurveda and modern science, we find
                 the timeless wisdom of herbal extracts, where nature&apos;s
                 ancient secrets are unveiled through the lens of

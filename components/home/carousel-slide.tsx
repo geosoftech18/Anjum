@@ -34,9 +34,9 @@ export const CarouselSlide = ({
         style={{ backgroundImage: `url(${image})` }}
       />
       <div className="absolute inset-0 bg-black/40" />
-      <div className="relative z-20 mx-auto h-full max-w-7xl max-sm:px-4 max-xl:px-16">
+      <div className="relative z-20 h-full container">
         <div className="flex h-full items-center">
-          <div className="max-w-4xl px-5">
+          <div className="max-w-4xl">
             <Heading className="text-4xl font-medium text-white dark:!text-white md:text-5xl lg:text-6xl">
               {title}
             </Heading>

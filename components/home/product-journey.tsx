@@ -58,12 +58,12 @@ export const ProductJourney = ({ className = '' }: ProductJourneyProps) => {
 
   return (
     <section
-      className={`w-full py-20 relative overflow-hidden bg-no-repeat bg-cover ${className}`}
+      className={`w-full relative overflow-hidden bg-no-repeat bg-cover ${className}`}
       style={{
         backgroundImage: 'url(/background/pattern-6.png)',
       }}
     >
-      <div className="container mx-auto px-5">
+      <div className="container py-20">
         <div className="text-center mb-12">
           <Text className="text-secondary-2 dark:text-secondary-2 mb-2">
             Product Journey
@@ -97,7 +97,7 @@ export const ProductJourney = ({ className = '' }: ProductJourneyProps) => {
             >
               {step.title}
               {activeStep === step.id && (
-                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#783F04] dark:bg-[#783F04]" />
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-secondary-2 dark:bg-secondary-2" />
               )}
             </button>
           ))}
@@ -111,7 +111,7 @@ export const ProductJourney = ({ className = '' }: ProductJourneyProps) => {
               className="bg-white rounded-xl shadow-sm p-8 transition-all hover:shadow-md flex flex-col items-center text-center max-w-80"
             >
               <div className="w-24 h-24 mb-6 relative">
-                <div className="w-full h-full flex items-center justify-center text-[#B88746] dark:text-[#B88746]">
+                <div className="w-full h-full flex items-center justify-center">
                   <Image
                     src={step.icon}
                     alt={step.title}
