@@ -78,9 +78,9 @@ const styles = {
       '[--btn-icon:theme(colors.zinc.400)] data-[active]:[--btn-icon:theme(colors.zinc.300)] data-[hover]:[--btn-icon:theme(colors.zinc.300)]',
     ],
     white: [
-      'text-zinc-950 [--btn-bg:white] [--btn-border:theme(colors.zinc.950/10%)] [--btn-hover-overlay:theme(colors.zinc.950/2.5%)] data-[active]:[--btn-border:theme(colors.zinc.950/15%)] data-[hover]:[--btn-border:theme(colors.zinc.950/15%)]',
-      'dark:[--btn-hover-overlay:theme(colors.zinc.950/5%)]',
-      '[--btn-icon:theme(colors.zinc.400)] data-[active]:[--btn-icon:theme(colors.zinc.500)] data-[hover]:[--btn-icon:theme(colors.zinc.500)]',
+      'text-secondary-2 [--btn-bg:white] [--btn-border:theme(colors.secondary.2/10%)] [--btn-hover-overlay:theme(colors.secondary.2/2.5%)] data-[active]:[--btn-border:theme(colors.secondary.2/15%)] data-[hover]:[--btn-border:theme(colors.secondary.2/15%)]',
+      'dark:[--btn-hover-overlay:theme(colors.secondary.2/5%)]',
+      '[--btn-icon:theme(colors.secondary.2)] data-[active]:[--btn-icon:theme(colors.secondary.2/80%)] data-[hover]:[--btn-icon:theme(colors.secondary.2/80%)]',
     ],
     zinc: [
       'text-white [--btn-hover-overlay:theme(colors.white/10%)] [--btn-bg:theme(colors.zinc.600)] [--btn-border:theme(colors.zinc.700/90%)]',

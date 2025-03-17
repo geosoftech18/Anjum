@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -17,22 +17,18 @@ import {
   UserIcon,
 } from '@heroicons/react/20/solid';
 import { Text, TextLink } from '../ui/text';
-import { cn } from '@/lib/utils';
 import { useMotionValue, motion, useTransform } from 'framer-motion';
 
 const Header = () => {
-  const [scrollPosition, setScrollPosition] = useState(0);
   const scrollY = useMotionValue(0);
 
   useEffect(() => {
     const handleScroll = () => {
       const position = window.scrollY;
-      setScrollPosition(position);
       scrollY.set(position);
     };
 
     // Set initial scroll position when component mounts
-    setScrollPosition(window.scrollY);
     scrollY.set(window.scrollY);
 
     window.addEventListener('scroll', handleScroll);
@@ -40,8 +36,6 @@ const Header = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, [scrollY]);
-
-  const shrinkNavbar = scrollPosition >= 80;
 
   // Transform values based on scroll position
   const navMargin = useTransform(scrollY, [0, 80], [20, 0]);

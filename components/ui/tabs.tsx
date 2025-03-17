@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import * as Headless from '@headlessui/react';
 import { cn } from '@/lib/utils';
 import { ReactNode } from 'react';
@@ -10,7 +10,15 @@ type TabGroupProps = {
   onChange?: (index: number) => void;
   vertical?: boolean;
   children: ReactNode;
-} & Omit<Headless.TabGroupProps, 'as' | 'className' | 'defaultIndex' | 'selectedIndex' | 'onChange' | 'vertical'>;
+} & Omit<
+  Headless.TabGroupProps,
+  | 'as'
+  | 'className'
+  | 'defaultIndex'
+  | 'selectedIndex'
+  | 'onChange'
+  | 'vertical'
+>;
 
 export const TabGroup = ({
   className,
@@ -29,10 +37,7 @@ export const TabGroup = ({
       onChange={onChange}
       vertical={vertical}
       {...props}
-      className={cn(
-        'w-full',
-        className
-      )}
+      className={cn('w-full', className)}
     >
       {children}
     </Headless.TabGroup>
@@ -51,7 +56,7 @@ export const TabList = ({ className, children, ...props }: TabListProps) => {
       {...props}
       className={cn(
         'flex flex-wrap border-b border-secondary-2/20 dark:border-primary/30',
-        className
+        className,
       )}
     >
       {children}
@@ -77,20 +82,20 @@ export const Tab = ({
     <Headless.Tab
       as="button"
       {...props}
-      className={({ selected }) =>  cn(
+      className={({ selected }) =>
+        cn(
           'relative inline-flex items-center justify-center px-4 py-2 text-sm font-medium outline-none transition-colors',
           'focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2',
           className,
           selected
             ? cn(
                 'text-primary border-b-2 border-primary dark:text-primary dark:border-primary',
-                activeClassName
+                activeClassName,
               )
             : cn(
                 'text-secondary-2 hover:text-primary-2 dark:text-tertiary dark:hover:text-primary',
-                inactiveClassName
+                inactiveClassName,
               ),
-          
         )
       }
     >
@@ -104,16 +109,13 @@ type TabPanelsProps = {
   children: ReactNode;
 } & Omit<Headless.TabPanelsProps, 'as' | 'className'>;
 
-export const TabPanels = ({ className, children, ...props }: TabPanelsProps) => {
+export const TabPanels = ({
+  className,
+  children,
+  ...props
+}: TabPanelsProps) => {
   return (
-    <Headless.TabPanels
-      as="div"
-      {...props}
-      className={cn(
-        'mt-4',
-        className
-      )}
-    >
+    <Headless.TabPanels as="div" {...props} className={cn('mt-4', className)}>
       {children}
     </Headless.TabPanels>
   );
@@ -126,15 +128,8 @@ type TabPanelProps = {
 
 export const TabPanel = ({ className, children, ...props }: TabPanelProps) => {
   return (
-    <Headless.TabPanel
-      as="div"
-      {...props}
-      className={cn(
-        'p-4',
-        className
-      )}
-    >
+    <Headless.TabPanel as="div" {...props} className={cn('p-4', className)}>
       {children}
     </Headless.TabPanel>
   );
-}; 
+};

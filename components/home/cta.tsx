@@ -27,13 +27,13 @@ export const CTA = ({ className = '' }: CTAProps) => {
           <div className="relative flex flex-col md:flex-row items-center">
             {/* Left side with doctor image */}
             <div className="flex-shrink-0 md:w-1/3 lg:w-1/4 mb-8 md:mb-0">
-                <Image
-                  src="/home/cta/ayurvedic-doctor.png"
-                  alt="Ayurvedic Doctor"
-                  width={230}
-                  height={295}
-                  className="rounded-xl object-cover z-10 w-[230px] h-[295px]"
-                />
+              <Image
+                src="/home/cta/ayurvedic-doctor.png"
+                alt="Ayurvedic Doctor"
+                width={230}
+                height={295}
+                className="rounded-xl object-cover z-10 w-[230px] h-[295px]"
+              />
             </div>
 
             {/* Middle with quote */}
