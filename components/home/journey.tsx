@@ -67,11 +67,11 @@ export const Journey = ({ className = '' }: JourneyProps) => {
                 <Image
                   src="/brand-assets/leaf-icon.svg"
                   alt="Leaf icon"
-                  width={80}
-                  height={45}
+                  width={50}
+                  height={50}
                 />
               </div>
-              <h3 className="mb-2 text-center text-sm sm:text-base font-semibold text-secondary-2">
+              <h3 className="mb-2 text-center text-sm sm:text-base text-secondary-2">
                 Ayurvedic practices, ethics at core
               </h3>
               <p className="text-center text-xs sm:text-xs text-text dark:text-text">
