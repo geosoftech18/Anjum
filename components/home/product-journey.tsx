@@ -29,13 +29,13 @@ export const ProductJourney = ({ className = '' }: ProductJourneyProps) => {
     {
       id: 'validation',
       title: 'Clinical Validation',
-      icon: '/home/magnifying-glass.png',
+      icon: '/home/magnifying-glass.png.png',
       description: 'Determining the potent activities',
     },
     {
       id: 'manufacturing',
       title: 'Manufacturing',
-      icon: '/home/factory.png',
+      icon: '/home/factory.png.png',
       description: 'Creating the product and its activities',
     },
     {
